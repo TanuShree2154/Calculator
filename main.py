@@ -1,5 +1,13 @@
 def Addition(a , b):
     print(f"sum of {a} and {b} is: {a+b}")
+def division(a,b):
+    if (a==0 or b==0):
+       print("Division by zero is not possible")
+    else:
+        print(f"Divison of {a} by {b} is:{a/b}")
+      
+    
+
 
 
 print("""choose option to perfrom operation:
@@ -24,6 +32,9 @@ while(True):
 
     if(ch==1):
         Addition(a , b)
+    elif(ch==4):
+        division(a,b)
+        
 
     
     else:
