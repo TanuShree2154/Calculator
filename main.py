@@ -1,5 +1,7 @@
 def Addition(a , b):
     print(f"sum of {a} and {b} is: {a+b}")
+def Subtraction(a, b):
+    print(f"Difference of {a} and {b} is: {a-b}")
 
 
 print("""choose option to perfrom operation:
@@ -24,9 +26,16 @@ while(True):
 
     if(ch==1):
         Addition(a , b)
+    
+    elif(ch==2):
+     Subtraction(a, b)
 
     
     else:
-        print("Invalid input")
+     print("Invalid input")
+
+
+
+
 
        
