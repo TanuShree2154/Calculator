@@ -1,6 +1,8 @@
 def Addition(a , b):
     print(f"sum of {a} and {b} is: {a+b}")
 
+def Multiplication(a,b):
+    print(f"Product of {a} and {b} is: {a*b}")
 
 print("""choose option to perfrom operation:
       1. addition 
@@ -17,6 +19,7 @@ while(True):
     
     ch = int(input("enter your choice:"))
     if(ch==8):
+        print("Exit.")
         break
     print("enter number:")
     a= int(input("enter first value:"))
@@ -24,6 +27,9 @@ while(True):
 
     if(ch==1):
         Addition(a , b)
+
+    elif(ch==3):
+        Multiplication(a,b)    
 
     
     else:
