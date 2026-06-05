@@ -1,3 +1,7 @@
+def Addition(a , b):
+    print(f"sum of {a} and {b} is: {a+b}")
+
+
 print("""choose option to perfrom operation:
       1. addition 
       2. substraction 
@@ -8,5 +12,21 @@ print("""choose option to perfrom operation:
       7. floor division
       8. exit
       """)
-ch = int(input("enter your choice:"))
 
+while(True):
+    
+    ch = int(input("enter your choice:"))
+    if(ch==8):
+        break
+    print("enter number:")
+    a= int(input("enter first value:"))
+    b= int(input("enter second value:"))
+
+    if(ch==1):
+        Addition(a , b)
+
+    
+    else:
+        print("Invalid input")
+
+       
