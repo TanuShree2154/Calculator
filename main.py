@@ -14,7 +14,15 @@ def Subtraction(a, b):
 def Multiplication(a,b):
     print(f"Product of {a} and {b} is: {a*b}")
 def modulus(a,b):
-   print(f"modulas of{a}and {b} is:{a%b}")    
+   print(f"modulas of{a}and {b} is:{a%b}") 
+def power(a , b):
+   print(f"{a} power {b}: {a**b}")
+def floor_division(a,b):
+    if(b==0):
+        print("not divisible by 0")
+    else:
+        print(f"floor division of {a} by {b}: {a//b}")    
+
 
 print("""choose option to perfrom operation:
       1. addition 
@@ -41,15 +49,19 @@ while(True):
         Addition(a , b)
     elif(ch==4):
         division(a,b)
-        
+       
     
     elif(ch==2):
      Subtraction(a, b)
 
     elif(ch==3):
         Multiplication(a,b)
+    elif(ch==5):
+       power(a,b)
     elif(ch==6):
-       modulus(a,b)        
+       modulus(a,b)    
+    elif(ch==7):
+       floor_division(a,b)    
     else:
      print("Invalid input")
 
