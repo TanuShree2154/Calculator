@@ -8,7 +8,11 @@ def division(a,b):
       
     
 
+def Subtraction(a, b):
+    print(f"Difference of {a} and {b} is: {a-b}")
 
+def Multiplication(a,b):
+    print(f"Product of {a} and {b} is: {a*b}")
 
 print("""choose option to perfrom operation:
       1. addition 
@@ -25,6 +29,7 @@ while(True):
     
     ch = int(input("enter your choice:"))
     if(ch==8):
+        print("Exit.")
         break
     print("enter number:")
     a= int(input("enter first value:"))
@@ -35,9 +40,19 @@ while(True):
     elif(ch==4):
         division(a,b)
         
+    
+    elif(ch==2):
+     Subtraction(a, b)
+
+    elif(ch==3):
+        Multiplication(a,b)    
 
     
     else:
-        print("Invalid input")
+     print("Invalid input")
+
+
+
+
 
        
