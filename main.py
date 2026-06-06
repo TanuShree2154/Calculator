@@ -5,6 +5,8 @@ def Subtraction(a, b):
 
 def Multiplication(a,b):
     print(f"Product of {a} and {b} is: {a*b}")
+def modulus(a,b):
+   print(f"modulas of{a}and {b} is:{a%b}")    
 
 print("""choose option to perfrom operation:
       1. addition 
@@ -34,9 +36,9 @@ while(True):
      Subtraction(a, b)
 
     elif(ch==3):
-        Multiplication(a,b)    
-
-    
+        Multiplication(a,b)
+    elif(ch==6):
+       modulus(a,b)        
     else:
      print("Invalid input")
 
